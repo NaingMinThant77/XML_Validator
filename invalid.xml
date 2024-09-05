@@ -1,0 +1,41 @@
+
+
+<!--        Missing Closing Tag-->
+<notes>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don’t forget me this weekend!
+</notes>
+
+<!--        Mismatched Tags-->
+<!--<library>-->
+<!--    <book>-->
+<!--        <title>Effective C</title>-->
+<!--    </book>-->
+<!--    <book>-->
+<!--        <title>Design Patterns</title>-->
+<!--        <author>Erich Gamma</title>-->
+<!--    </book>-->
+<!--</library>-->
+
+<!--        //Incorrectly Nested Tags-->
+<!--<data>-->
+<!--    <entry>-->
+<!--        <info>Sample</info>-->
+<!--    </entry>-->
+<!--    <data>Extra data</data>-->
+<!--</data>-->
+
+
+        <!-- Nested Invalid XML-->
+        <!--        <library>-->
+        <!--            <book>-->
+        <!--                <title>Effective C</title>-->
+        <!--                <author>Robert C. Martin</author>-->
+        <!--            </book>-->
+        <!--            <book>-->
+        <!--                <title>Design Patterns</title>-->
+        <!--                <author>Erich Gamma</author>-->
+        <!--            </author> &lt;!&ndash; This closing tag is incorrect &ndash;&gt;-->
+        <!--        </library>-->

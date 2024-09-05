@@ -1,0 +1,38 @@
+<!--Simple Valid XML-->
+<!--<notes>-->
+<!--    <to>Tove</to>-->
+<!--    <from>Jani</from>-->
+<!--    <heading>Reminder</heading>-->
+<!--    <body>Don’t forget me this weekend!<body/>-->
+<!--</notes>-->
+
+<!-- Nested Valid XML-->
+
+<library>
+    <book>
+        <title>Effective C</title>
+        <author>Robert C. Martin</author>
+    </book>
+    <book>
+        <title>Design Patterns</title>
+        <author>Erich Gamma</author>
+    </book>
+</library>
+
+<!-- Nested InValid XML-->
+<!--<library>-->
+<!--    <book>-->
+<!--        <title>Effective C</title>-->
+<!--        <author>Robert C. Martin</author>-->
+<!--    </book>-->
+<!--    <book>-->
+<!--        <title>Design Patterns</title>-->
+<!--        <author>Erich Gamma</author>-->
+<!--    </author> &lt;!&ndash; This closing tag is incorrect &ndash;&gt;-->
+<!--</library>-->
+
+<!-- Empty Tags Valid XML-->
+<!--<data>-->
+<!--    <entry/>-->
+<!--    <info>Sample</info>-->
+<!--</data>-->

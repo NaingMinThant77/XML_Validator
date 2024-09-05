@@ -1,0 +1,53 @@
+
+
+To compile code in Visual Studio Code=> run =>
+            cd path/to/your/directory
+            gcc yourfile.c -o yourprogram
+            ./yourprogram
+
+Code Summary
+
+    Stack Operations:
+        initStack: Initializes the stack for managing tags.
+        push: Adds a tag to the top of the stack.
+        pop: Removes the tag from the top of the stack.
+        peek: Retrieves the tag at the top of the stack without removing it.
+        isEmpty: Checks if the stack is empty.
+
+    Tag Matching:
+        tagsMatch: Compares an opening tag to a closing tag to see if they match.
+
+    Comment Handling:
+        skipComment: Skips over XML comments to ensure they don't interfere with tag validation.
+
+    XML Validation:
+        validateXML: Reads the XML file character by character, processes tags, and uses the stack to check for proper nesting
+                     and matching of tags. Ignores comments and self-closing tags.
+
+    Main Function:
+        main: Opens the XML file, calls validateXML to check its validity, and prints whether the XML is valid or invalid.
+
+
+
+
+Why Use a Stack for XML Validation?
+
+    Tag Matching:
+        Last-In, First-Out (LIFO): A stack handles the most recent tag first, which is what you need to ensure that
+                                   every opening tag is closed correctly. For example, if you open <book>,
+                                   you need to close </book> before closing any surrounding tags.
+
+    Simple and Effective:
+        Easy to Implement: Stacks are straightforward to use and fit perfectly for this problem.
+                           You push tags onto the stack when they are opened and pop them off when they are closed.
+
+    Efficient:
+        Memory and Processing: Stacks use memory efficiently and perform well for checking tag nesting without extra overhead.
+
+Comparison to Other Data Structures
+
+    Queue: Not suitable because it processes tags in the order they are added, not in reverse.
+    Tree: More complex and not necessary for just matching tags.
+    Hash Table: Good for fast lookups but not for managing tag order.
+
+In summary, a stack is ideal for validating XML tags because it naturally handles the order of nested tags and is easy to use.
